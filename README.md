@@ -115,6 +115,85 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 *Caption*: ROC Curve for Pruned and Quantized CNN Model on Test Data
 
+# Knowledge Distillation Teacher Model
+
+| Layer (type)          | Output Shape       | Param #   |
+|-----------------------|--------------------|-----------|
+| Conv1d-1              | [-1, 100, 991]     | 12,100    |
+| BatchNorm1d-2         | [-1, 100, 991]     | 200       |
+| ReLU-3                | [-1, 100, 991]     | 0         |
+| MaxPool1d-4           | [-1, 100, 495]     | 0         |
+| Dropout-5             | [-1, 100, 495]     | 0         |
+| Conv1d-6              | [-1, 250, 486]     | 250,250   |
+| BatchNorm1d-7         | [-1, 250, 486]     | 500       |
+| ReLU-8                | [-1, 250, 486]     | 0         |
+| MaxPool1d-9           | [-1, 250, 243]     | 0         |
+| Dropout-10            | [-1, 250, 243]     | 0         |
+| Conv1d-11             | [-1, 500, 234]     | 1,250,500 |
+| BatchNorm1d-12        | [-1, 500, 234]     | 1,000     |
+| ReLU-13               | [-1, 500, 234]     | 0         |
+| MaxPool1d-14          | [-1, 500, 117]     | 0         |
+| Dropout-15            | [-1, 500, 117]     | 0         |
+| Conv1d-16             | [-1, 1000, 108]    | 5,001,000 |
+| BatchNorm1d-17        | [-1, 1000, 108]    | 2,000     |
+| ReLU-18               | [-1, 1000, 108]    | 0         |
+| MaxPool1d-19          | [-1, 1000, 54]     | 0         |
+| AdaptiveAvgPool1d-20  | [-1, 1000, 1]      | 0         |
+| Dropout-21            | [-1, 1000]         | 0         |
+| Linear-22             | [-1, 5]            | 5,005     |
+| Sigmoid-23            | [-1, 5]            | 0         |
+|-----------------------|--------------------|-----------|
+| Total params          |                    | 6,522,555 | Trainable: 6,522,555, Non-trainable: 0   |
+| Input size (MB)      |                    | 0.05      |                                         |
+| Forward/backward pass |                    | 13.20     |                                         |
+| size (MB)             |                    |           |                                         |
+| Params size (MB)     |                    | 24.88     |                                         |
+| Estimated Total Size |                    | 38.13     |                                         |
+
+# ROC Curve for the Knowledge Distillation Teacher Model on Test Data
+
+![ROC Curve for the Knowledge Distillation Teacher Model on Test Data](https://user-images.githubusercontent.com/49470426/278029862-aead166f-ea26-42f2-8804-efb5546ba9c4.png)
+
+*ROC Curve for the Knowledge Distillation Teacher Model on Test Data*
+
+# Knowledge Distillation Student Model
+
+| Layer              | Output Shape      | Param #    |
+|------------------- |------------------- |----------- |
+| Conv1d-1           | [-1, 50, 991]     | 6,050      |
+| BatchNorm1d-2      | [-1, 50, 991]     | 100        |
+| ReLU-3             | [-1, 50, 991]     | 0          |
+| MaxPool1d-4        | [-1, 50, 495]     | 0          |
+| Dropout-5          | [-1, 50, 495]     | 0          |
+| Conv1d-6           | [-1, 150, 486]    | 75,150     |
+| BatchNorm1d-7      | [-1, 150, 486]    | 300        |
+| ReLU-8             | [-1, 150, 486]    | 0          |
+| MaxPool1d-9        | [-1, 150, 243]    | 0          |
+| Dropout-10         | [-1, 150, 243]    | 0          |
+| Conv1d-11          | [-1, 300, 234]    | 450,300    |
+| BatchNorm1d-12     | [-1, 300, 234]    | 600        |
+| ReLU-13            | [-1, 300, 234]    | 0          |
+| MaxPool1d-14       | [-1, 300, 117]    | 0          |
+| AdaptiveAvgPool1d-15 | [-1, 300, 1]    | 0          |
+| Dropout-16         | [-1, 300]         | 0          |
+| Linear-17          | [-1, 5]           | 1,505      |
+| Sigmoid-18         | [-1, 5]           | 0          |
+|-------------------------------|------------------|-----------------------------------------|
+| Total params                 |                   | 6,522,555                                |
+| Trainable:                  |                   | 6,522,555                                |
+| Non-trainable:              |                   | 0                                       |
+| Input size (MB)             |                   | 0.05                                    |
+| Forward/backward pass size  |                   | 13.20                                   |
+| (MB)                        |                   |                                         |
+| Params size (MB)            |                   | 24.88                                   |
+| Estimated Total Size (MB)   |                   | 38.13                                   |
+
+# ROC Curve for the Knowledge Distillation Student Model on Test Data
+
+![ROC Curve for the Knowledge Distillation Student Model on Test Data](https://user-images.githubusercontent.com/49470426/278031917-f5a7bd0e-ee97-4996-94f6-4bb5492e7125.png)
+
+*ROC Curve for the Knowledge Distillation Student Model on Test Data*
+
 ### 4. 소개 및 시연 영상
 
 프로젝트 소개나 시연 영상을 넣으세요.
