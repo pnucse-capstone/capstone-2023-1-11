@@ -50,12 +50,12 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 ## 환자 0의 12-Lead ECG 그래프
 
 ![환자 0의 12 Lead ECG 그래프](https://user-images.githubusercontent.com/49470426/277953392-337808e7-7c51-4fa6-b661-31ed4ec2146e.png)
-*환자 0의 12-Lead ECG 그래프*
+*Caption*: 환자 0의 12-Lead ECG 그래프
 
 ## 다중 레이블 클래스 수
 
 ![다중 레이블 클래스 수](https://user-images.githubusercontent.com/49470426/277953543-4a9b9190-04af-48d9-94a7-290d97e0651d.png)
-*다중 레이블 클래스 수*
+*Caption*: 다중 레이블 클래스 수
 
 # Inception CNN Model with Batch Normalization
 
@@ -95,13 +95,13 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 # Visualization of Inception CNN Model with Batch Normalization
 ![Inception CNN Model with Batch Normalization](https://user-images.githubusercontent.com/49470426/278013827-73750cb5-ea11-44bd-9cbc-cdf6a4f009df.png)
 
-*Visualization of Inception CNN Model with Batch Normalization*
+*Caption*: Visualization of Inception CNN Model with Batch Normalization
 
 # Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
 
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278016470-d0309e04-67c7-4dd9-bd8e-236699c40bc6.png)
 
-*Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data*
+*Caption*: Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
 
 # ROC Curve for Pruned CNN Model on Test Data
 
@@ -114,6 +114,12 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278022102-951101d9-7a09-4c78-8128-f4ae214ab633.png)
 
 *Caption*: ROC Curve for Pruned and Quantized CNN Model on Test Data
+
+# ROC Curve for Quantized CNN Model on Validation Data
+
+![ROC Curve](https://user-images.githubusercontent.com/49470426/278037305-a53825b0-44b1-4ac5-9442-bf6479430a34.png)
+
+*Caption*: ROC Curve for Quantized CNN Model on Validation Data
 
 # Knowledge Distillation Teacher Model
 
@@ -156,7 +162,7 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 ![ROC Curve for the Knowledge Distillation Teacher Model on Test Data](https://user-images.githubusercontent.com/49470426/278029862-aead166f-ea26-42f2-8804-efb5546ba9c4.png)
 
-*ROC Curve for the Knowledge Distillation Teacher Model on Test Data*
+*Caption*: ROC Curve for the Knowledge Distillation Teacher Model on Test Data
 
 # Knowledge Distillation Student Model
 
@@ -194,7 +200,7 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 ![ROC Curve for the Knowledge Distillation Student Model on Test Data](https://user-images.githubusercontent.com/49470426/278031917-f5a7bd0e-ee97-4996-94f6-4bb5492e7125.png)
 
-*ROC Curve for the Knowledge Distillation Student Model on Test Data*
+*Caption*: ROC Curve for the Knowledge Distillation Student Model on Test Data
 
 ### 4. 소개 및 시연 영상
 
