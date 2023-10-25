@@ -50,10 +50,12 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 ## 환자 0의 12-Lead ECG 그래프
 
 ![환자 0의 12 Lead ECG 그래프](https://user-images.githubusercontent.com/49470426/277953392-337808e7-7c51-4fa6-b661-31ed4ec2146e.png)
+*환자 0의 12-Lead ECG 그래프*
 
 ## 다중 레이블 클래스 수
 
 ![다중 레이블 클래스 수](https://user-images.githubusercontent.com/49470426/277953543-4a9b9190-04af-48d9-94a7-290d97e0651d.png)
+*다중 레이블 클래스 수*
 
 # Inception CNN Model with Batch Normalization
 
@@ -89,6 +91,8 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 |------------------------|--------------------|-----------|-----------------------------------------|
 | Total params           |                    | 4266277   | Trainable: 4265189, Non-trainable: 1088 |
 
+
+# Visualization of Inception CNN Model with Batch Normalization
 ![Inception CNN Model with Batch Normalization](https://user-images.githubusercontent.com/49470426/278013827-73750cb5-ea11-44bd-9cbc-cdf6a4f009df.png)
 *Visualization of Inception CNN Model with Batch Normalization*
 
