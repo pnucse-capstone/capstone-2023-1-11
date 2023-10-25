@@ -143,12 +143,14 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | Linear-22             | [-1, 5]            | 5,005     |
 | Sigmoid-23            | [-1, 5]            | 0         |
 |-----------------------|--------------------|-----------|
-| Total params          |                    | 6,522,555 | Trainable: 6,522,555, Non-trainable: 0   |
-| Input size (MB)      |                    | 0.05      |                                         |
-| Forward/backward pass |                    | 13.20     |                                         |
-| size (MB)             |                    |           |                                         |
-| Params size (MB)     |                    | 24.88     |                                         |
-| Estimated Total Size |                    | 38.13     |                                         |
+| Total params               |                    | 6,522,555   |
+| Trainable params           |                    | 6,522,555   |
+| Non-trainable params       |                    | 0           |
+| Input size (MB)            |                    | 0.05        |
+| Forward/backward pass size (MB) |             | 13.20       |
+| Params size (MB)           |                    | 24.88       |
+| Estimated Total Size       |                    | 38.13       |
+
 
 # ROC Curve for the Knowledge Distillation Teacher Model on Test Data
 
@@ -179,14 +181,14 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | Linear-17          | [-1, 5]           | 1,505      |
 | Sigmoid-18         | [-1, 5]           | 0          |
 |-------------------------------|------------------|-----------------------------------------|
-| Total params                 |                   | 6,522,555                                |
-| Trainable:                  |                   | 6,522,555                                |
-| Non-trainable:              |                   | 0                                       |
-| Input size (MB)             |                   | 0.05                                    |
-| Forward/backward pass size  |                   | 13.20                                   |
-| (MB)                        |                   |                                         |
-| Params size (MB)            |                   | 24.88                                   |
-| Estimated Total Size (MB)   |                   | 38.13                                   |
+| Total params                  |                 | 6,522,555   |
+| Trainable                     |                 | 6,522,555   |
+| Non-trainable                 |                 | 0           |
+| Input size (MB)               |                 | 0.05        |
+| Forward/backward pass size (MB)|               | 13.20       |
+| Params size (MB)              |                 | 24.88       |
+| Estimated Total Size (MB)     |                 | 38.13       |
+
 
 # ROC Curve for the Knowledge Distillation Student Model on Test Data
 
