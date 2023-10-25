@@ -89,6 +89,9 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 |------------------------|--------------------|-----------|-----------------------------------------|
 | Total params           |                    | 4266277   | Trainable: 4265189, Non-trainable: 1088 |
 
+![Inception CNN Model with Batch Normalization](https://user-images.githubusercontent.com/49470426/278013827-73750cb5-ea11-44bd-9cbc-cdf6a4f009df.png)
+*Visualization of Inception CNN Model with Batch Normalization*
+
 ### 4. 소개 및 시연 영상
 
 프로젝트 소개나 시연 영상을 넣으세요.
