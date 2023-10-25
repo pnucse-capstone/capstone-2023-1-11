@@ -47,6 +47,13 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | CD          | 4,898      | 전도 장애(Conduction Disturbance)에 기인한 ECG 결과를 나타냅니다. 심장의 전기적인 전달에 이상이 있는 경우, 이러한 변화가 나타납니다. |
 | HYP         | 2,649      | 심근 비대(Hypertrophy)로 인한 ECG 결과를 나타냅니다. 심근 비대는 심장 근육의 증대를 의미하며, 이러한 변화가 ECG에서 확인될 수 있습니다. |
 
+## 환자 0의 12-Lead ECG 그래프
+
+![환자 0의 12 Lead ECG 그래프](https://user-images.githubusercontent.com/49470426/277953392-337808e7-7c51-4fa6-b661-31ed4ec2146e.png)
+
+## 다중 레이블 클래스 수
+
+![다중 레이블 클래스 수](https://user-images.githubusercontent.com/49470426/277953543-4a9b9190-04af-48d9-94a7-290d97e0651d.png)
 
 ### 4. 소개 및 시연 영상
 
