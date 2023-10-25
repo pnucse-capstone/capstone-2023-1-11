@@ -94,7 +94,14 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 # Visualization of Inception CNN Model with Batch Normalization
 ![Inception CNN Model with Batch Normalization](https://user-images.githubusercontent.com/49470426/278013827-73750cb5-ea11-44bd-9cbc-cdf6a4f009df.png)
+
 *Visualization of Inception CNN Model with Batch Normalization*
+
+# Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
+
+![ROC Curve](https://user-images.githubusercontent.com/49470426/278016470-d0309e04-67c7-4dd9-bd8e-236699c40bc6.png)
+
+*Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data*
 
 ### 4. 소개 및 시연 영상
 
