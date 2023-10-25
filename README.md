@@ -55,6 +55,40 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 ![다중 레이블 클래스 수](https://user-images.githubusercontent.com/49470426/277953543-4a9b9190-04af-48d9-94a7-290d97e0651d.png)
 
+# Inception CNN Model with Batch Normalization
+
+| Layer                  | Output Shape       | Param #   | Connected to                            |
+|------------------------|--------------------|-----------|-----------------------------------------|
+| input_1 (InputLayer)   | (None, 1000, 12)   | 0         |                                         |
+| conv1d                 | (None, 1000, 32)   | 2720      | input_1[0][0]                           |
+| batch_normalization    | (None, 1000, 32)   | 128       | conv1d[0][0]                            |
+| conv1d_1               | (None, 1000, 128)  | 20608     | batch_normalization[0][0]              |
+| max_pooling1d          | (None, 500, 128)   | 0         | conv1d_1[0][0]                         |
+| batch_normalization_1  | (None, 500, 128)   | 512       | max_pooling1d[0][0]                    |
+| conv1d_2               | (None, 500, 64)    | 57408     | batch_normalization_1[0][0]            |
+| max_pooling1d_1        | (None, 250, 64)    | 0         | conv1d_2[0][0]                         |
+| batch_normalization_2  | (None, 250, 64)    | 256       | max_pooling1d_1[0][0]                  |
+| conv1d_3               | (None, 250, 64)    | 20544     | batch_normalization_2[0][0]            |
+| max_pooling1d_2        | (None, 125, 64)    | 0         | conv1d_3[0][0]                         |
+| batch_normalization_3  | (None, 125, 64)    | 256       | max_pooling1d_2[0][0]                  |
+| conv1d_5               | (None, 125, 64)    | 4160      | batch_normalization_3[0][0]            |
+| conv1d_7               | (None, 125, 64)    | 4160      | batch_normalization_3[0][0]            |
+| max_pooling1d_3        | (None, 125, 64)    | 0         | batch_normalization_3[0][0]            |
+| conv1d_4               | (None, 125, 64)    | 4160      | batch_normalization_3[0][0]            |
+| conv1d_6               | (None, 125, 64)    | 12352     | conv1d_5[0][0]                         |
+| conv1d_8               | (None, 125, 64)    | 20544     | conv1d_7[0][0]                         |
+| conv1d_9               | (None, 125, 64)    | 4160      | max_pooling1d_3[0][0]                  |
+| concatenate            | (None, 125, 256)   | 0         | conv1d_4[0][0], conv1d_6[0][0],        |
+|                        |                    |           | conv1d_8[0][0], conv1d_9[0][0]        |
+| flatten                | (None, 32000)       | 0         | concatenate[0][0]                     |
+| dense                  | (None, 128)         | 4096128   | flatten[0][0]                          |
+| batch_normalization_4  | (None, 128)         | 512       | dense[0][0]                            |
+| dense_1                | (None, 128)         | 16512     | batch_normalization_4[0][0]            |
+| batch_normalization_5  | (None, 128)         | 512       | dense_1[0][0]                          |
+| dense_2                | (None, 5)           | 645       | batch_normalization_5[0][0]            |
+|------------------------|--------------------|-----------|-----------------------------------------|
+| Total params           |                    | 4266277   | Trainable: 4265189, Non-trainable: 1088 |
+
 ### 4. 소개 및 시연 영상
 
 프로젝트 소개나 시연 영상을 넣으세요.
