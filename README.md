@@ -21,16 +21,16 @@
 
 ### 3. 구성도
 
-# PTB-XL 데이터 세트
+#### PTB-XL 데이터 세트
 
 PTB-XL 데이터 세트는 임상 12-lead ECG로 구성된 10초 길이의 데이터로, 총 18,869명의 환자로부터 수집되었습니다.
 
-## 데이터 세트 정보
+#### 데이터 세트 정보
 
 - **버전:** 1.0.3
 - **출처:** [PhysioNet PTB-XL](https://physionet.org/content/ptb-xl/1.0.3/)
 
-## 데이터 구성
+#### 데이터 구성
 
 PTB-XL 데이터 세트의 주요 특징:
 
@@ -38,7 +38,7 @@ PTB-XL 데이터 세트의 주요 특징:
 - **ECG 리드:** 12개 (12-lead ECG)
 - **데이터 포인트 길이:** 10초
 
-## 슈퍼클래스 정보
+#### 슈퍼클래스 정보
 
 PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
@@ -50,17 +50,17 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | CD          | 4,898      | 전도 장애(Conduction Disturbance)에 기인한 ECG 결과를 나타냅니다. 심장의 전기적인 전달에 이상이 있는 경우, 이러한 변화가 나타납니다. |
 | HYP         | 2,649      | 심근 비대(Hypertrophy)로 인한 ECG 결과를 나타냅니다. 심근 비대는 심장 근육의 증대를 의미하며, 이러한 변화가 ECG에서 확인될 수 있습니다. |
 
-## 환자 0의 12-Lead ECG 그래프
+#### 환자 0의 12-Lead ECG 그래프
 
 ![환자 0의 12 Lead ECG 그래프](https://user-images.githubusercontent.com/49470426/277953392-337808e7-7c51-4fa6-b661-31ed4ec2146e.png)
 *Caption*: 환자 0의 12-Lead ECG 그래프
 
-## 다중 레이블 클래스 수
+#### 다중 레이블 클래스 수
 
 ![다중 레이블 클래스 수](https://user-images.githubusercontent.com/49470426/277953543-4a9b9190-04af-48d9-94a7-290d97e0651d.png)
 *Caption*: 다중 레이블 클래스 수
 
-# Inception CNN Model with Batch Normalization
+#### Inception CNN Model with Batch Normalization
 
 | Layer                  | Output Shape       | Param #   | Connected to                            |
 |------------------------|--------------------|-----------|-----------------------------------------|
@@ -95,36 +95,36 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | Total params           |                    | 4266277   | Trainable: 4265189, Non-trainable: 1088 |
 
 
-# Visualization of Inception CNN Model with Batch Normalization
+#### Visualization of Inception CNN Model with Batch Normalization
 ![Inception CNN Model with Batch Normalization](https://user-images.githubusercontent.com/49470426/278013827-73750cb5-ea11-44bd-9cbc-cdf6a4f009df.png)
 
 *Caption*: Visualization of Inception CNN Model with Batch Normalization
 
-# Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
+#### Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
 
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278016470-d0309e04-67c7-4dd9-bd8e-236699c40bc6.png)
 
 *Caption*: Inception CNN Model with Batch Normalization's Receiver Operating Characteristic (ROC) Curve and AUC for Test Data
 
-# ROC Curve for Pruned CNN Model on Test Data
+#### ROC Curve for Pruned CNN Model on Test Data
 
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278021636-a8007250-0352-48fd-9f8b-b7c969331b5c.png)
 
 *Caption*: ROC Curve for Pruned CNN Model on Test Data
 
-# ROC Curve for Pruned and Quantized CNN Model on Test Data
+#### ROC Curve for Pruned and Quantized CNN Model on Test Data
 
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278022102-951101d9-7a09-4c78-8128-f4ae214ab633.png)
 
 *Caption*: ROC Curve for Pruned and Quantized CNN Model on Test Data
 
-# ROC Curve for Quantized CNN Model on Validation Data
+#### ROC Curve for Quantized CNN Model on Validation Data
 
 ![ROC Curve](https://user-images.githubusercontent.com/49470426/278037305-a53825b0-44b1-4ac5-9442-bf6479430a34.png)
 
 *Caption*: ROC Curve for Quantized CNN Model on Validation Data
 
-# Knowledge Distillation Teacher Model
+#### Knowledge Distillation Teacher Model
 
 | Layer (type)          | Output Shape       | Param #   |
 |-----------------------|--------------------|-----------|
@@ -161,13 +161,13 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | Estimated Total Size       |                    | 38.13       |
 
 
-# ROC Curve for the Knowledge Distillation Teacher Model on Test Data
+#### ROC Curve for the Knowledge Distillation Teacher Model on Test Data
 
 ![ROC Curve for the Knowledge Distillation Teacher Model on Test Data](https://user-images.githubusercontent.com/49470426/278029862-aead166f-ea26-42f2-8804-efb5546ba9c4.png)
 
 *Caption*: ROC Curve for the Knowledge Distillation Teacher Model on Test Data
 
-# Knowledge Distillation Student Model
+#### Knowledge Distillation Student Model
 
 | Layer              | Output Shape      | Param #    |
 |------------------- |------------------- |----------- |
@@ -199,7 +199,7 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 | Estimated Total Size (MB)     |                 | 38.13       |
 
 
-# ROC Curve for the Knowledge Distillation Student Model on Test Data
+#### ROC Curve for the Knowledge Distillation Student Model on Test Data
 
 ![ROC Curve for the Knowledge Distillation Student Model on Test Data](https://user-images.githubusercontent.com/49470426/278031917-f5a7bd0e-ee97-4996-94f6-4bb5492e7125.png)
 
@@ -211,14 +211,14 @@ PTB-XL 데이터 세트의 슈퍼클래스 정보:
 
 ### 5. 사용법
 
-## 시스템 및 소프트웨어 정보
+#### 시스템 및 소프트웨어 정보
 
 - 운영 체제: Windows 10 Pro
 - 프로세서: Intel(R) Core(TM) i7-7700HQ CPU
 - 운영 체제 아키텍처: 64비트, x64 기반 프로세서
 - 그래픽 카드: NVIDA Geforce GTX 1060 6GB
 
-### Anaconda 및 Python 환경
+#### Anaconda 및 Python 환경
 
 - Anaconda 버전: conda 23.5.2
 - Python 버전: 3.9.18
